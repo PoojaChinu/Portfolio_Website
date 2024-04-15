@@ -1,21 +1,12 @@
-:root {
-  --primary-color: #0bd4e6;
-  --secondary-color: #358b18;
-  --secondary-color: var(--secondary-color);
-  --hyperlink-color-visited: blue;
-  --hyperlink-color-active: var(--secondary-color);
-  --hyperlink-color: blueviolet;
-  --navigation-list-active: lightblue;
-  --button-color: #357b70;
-  --button-bottom-color: #abd2cc;
-  --button-background-color: #6aefdb;
-  --sun-rise-color: #edc655;
-  --sun-set-color: #f76414;
-  --grid-color: lightgray;
-  --table-hover-color: rgba(255, 255, 255, 0.3);
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -24,7 +15,7 @@
 }
 
 .bg-lighter {
-  background-color: lighter(var(--secondary-color), 20%);
+  background-color: lighter(#358b18, 20%);
 }
 
 body {
@@ -35,7 +26,7 @@ body {
 h1 {
   font-size: 30px;
   font-weight: 700;
-  color: var(--primary-color);
+  color: #0bd4e6;
 }
 
 .work {
@@ -51,17 +42,17 @@ h1 {
 }
 
 p {
-  color: var(--secondary-color);
+  color: #358b18;
 }
 
 button {
   border: none;
-  background-color: var(--button-background-color);
-  color: var(--button-color);
+  background-color: #6aefdb;
+  color: #357b70;
   text-decoration: none;
   padding: 20px;
   border-radius: 3px;
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid #358b18;
 }
 button :hover,
 button :focus {
@@ -73,19 +64,26 @@ a :hover {
   text-decoration: none;
 }
 a :visited {
-  color: var(--hyperlink-color-visited);
+  color: blue;
 }
 a :active {
-  color: var(--hyperlink-color-active);
+  color: #358b18;
 }
 a :link {
-  color: var(--hyperlink-color);
+  color: blueviolet;
 }
 
 .page-footer {
   clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
@@ -97,6 +95,8 @@ a :link {
   max-width: 700px;
   margin: 10% auto;
   margin-bottom: 5px;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
 }
 .profile-intro {
@@ -110,6 +110,8 @@ a :link {
   padding: 10px;
   max-height: 250px;
   max-width: 250px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   float: left;
 }
@@ -119,23 +121,37 @@ a :link {
 }
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 30px;
 }
 
 .page-header__item {
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
@@ -156,14 +172,18 @@ a :link {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: var(--secondary-color);
+  background-color: #358b18;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   /* width of the border, type, color */
-  border-bottom: 2px solid var(--button-border-color);
+  border-bottom: undefined;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
 }
 .button button :hover,
@@ -173,7 +193,7 @@ a :link {
 }
 
 .button button {
-  background-color: var(--primary-color);
+  background-color: #0bd4e6;
 }
 
 /* Table styling*/
@@ -192,86 +212,175 @@ td {
 }
 
 tr {
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
 }
 
 tr:hover {
-  background-color: var(--table-hover-color);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-link,
+link {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  color: blueviolet;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
 .link {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  color: var(--hyperlink-color);
+  color: blueviolet;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
   transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
+}
+
+@-webkit-keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
 }
 
 @keyframes color-change {
   from {
-    fill: var(--sun-rise-color);
+    fill: #edc655;
   }
   to {
-    fill: var(--sun-set-color);
+    fill: #f76414;
   }
 }
 .sun {
+  -webkit-animation-duration: 4s;
   animation-duration: 4s;
+  -webkit-animation-name: color-change;
   animation-name: color-change;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+    transform: translate(0, 50px);
+  }
+  to {
+    -webkit-transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move {
   from {
+    -webkit-transform: translate(0, 50px);
     transform: translate(0, 50px);
   }
   to {
+    -webkit-transform: translate(200px, 50px);
     transform: translate(200px, 50px);
   }
 }
 .cloud-front {
+  -webkit-animation-duration: 30s;
   animation-duration: 30s;
+  -webkit-animation-name: cloud-move;
   animation-name: cloud-move;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    -webkit-transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
+  }
+  to {
+    -webkit-transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
+  }
 }
 
 @keyframes cloud-move-reverse {
   from {
+    -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
   to {
+    -webkit-transform: translate(100px, 48px);
     transform: translate(100px, 48px);
   }
 }
 @supports (display: grid) {
   .grid {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 200px 20px 200px 20px 200px 20px 200px;
     grid-template-columns: 200px 200px 200px 200px;
+    -ms-grid-rows: 300px;
     grid-template-rows: 300px;
     grid-gap: 20px;
   }
+  .grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .grid > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .grid > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  .grid > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+  }
 
   .grid__item {
-    background-color: var(--grid-color);
+    background-color: lightgray;
   }
 }
 @media all and (max-width: 750px) {
   .grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -294,11 +403,16 @@ link,
   }
 
   .navigation-list {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 
   .navigation-list_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: auto 2px;
   }
@@ -319,11 +433,13 @@ link,
   .profile__portrait {
     border-radius: 50%;
     padding: auto;
+    -ms-flex-line-pack: center;
     align-content: center;
     float: none;
   }
 
   .footer-image {
+    -ms-flex-line-pack: center;
     align-content: center;
     position: relative;
   }
