@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.production.css" />
   </head>
   <body>
     <!-- Here is the header of the website -->
@@ -30,21 +30,21 @@
       <nav class="main-navigation page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list_item navigation-list_item--active"
+            <a href="index.html" role="menuitem" class="navigation-list_item"
               >Home</a
             >
           </li>
           <li role="presentation">
             <a href="about.html" role="menuitem" class="navigation-list_item"
-              >About Me</a
+              >About</a
             >
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list_item"
-              >My Work</a
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list_item navigation-list_item--active"
+              >Work</a
             >
           </li>
           <li role="presentation">
@@ -62,16 +62,16 @@
         <!-- Grid items will live here -->
         <div class="grid__item">
           <h2>Frontend Development</h2>
-          <p>
+          <p class="work">
             Within this Development, I am responsible for creating Portfolio in
             HTML and CSS. Additionally,I am also responsible for independent
-            code review and testing the websites.
+            code review.
           </p>
           <a href="#">See project on GitHub</a>
         </div>
         <div class="grid__item">
           <h2>Backend Development</h2>
-          <p>
+          <p class="work">
             Within this project, I am responsible for creating the websites
             using backend frameworks. Also responsible for follwing the good
             code best practices.
@@ -80,7 +80,7 @@
         </div>
         <div class="grid__item">
           <h2>Testing and Debugging</h2>
-          <p>
+          <p class="work">
             Within this project, I am responsible to indepdently test and debug
             the entire test code. Also responsible for getting the knowledge on
             new testing frameworks.
@@ -88,11 +88,11 @@
           <a href="#">See project on GitHub</a>
         </div>
         <div class="grid__item">
-          <h2>Mobile web app</h2>
-          <p>
+          <h2>Mobile Web Application</h2>
+          <p class="work">
             Within this project, I was responsible for the frontend. It’s
             written in React.js. Additionally, I've created the HTML and CSS
-            templates.
+            templates and have worked on them.
           </p>
           <a href="#">See project on GitHub</a>
         </div>
@@ -100,7 +100,7 @@
     </section>
     <!-- Here is the footer of the website -->
     <footer class="page-footer">
-      <p>Find me on</p>
+      <p class="footer-text">Find me on</p>
       <div>
         <a href="" target="_blank">
           <img src="./img/github.png" alt="Github" width="30px" height="30px" />
@@ -124,6 +124,5 @@
       </div>
     </footer>
     <script src="./js/tota11y.min.js"></script>
-    <div class="page-footer">Footer</div>
   </body>
 </html>
