@@ -26,7 +26,7 @@ body {
 h1 {
   font-size: 30px;
   font-weight: 700;
-  color: #0bd4e6;
+  color: black;
 }
 
 .work {
@@ -42,7 +42,7 @@ h1 {
 }
 
 p {
-  color: #358b18;
+  color: black;
 }
 
 button {
@@ -163,6 +163,94 @@ a :link {
 }
 .navigation-list_item--active {
   background-color: lightblue;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div_mail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+form.form_layout {
+  display: table;
+  padding: 20px;
+  border-color: var(--dark-violet);
+  background-color: var(--opaque-color);
+  border-style: dotted;
+}
+
+div.div_layout {
+  display: table;
+  margin: 2px;
+}
+
+label,
+input {
+  display: table-cell;
+  margin-bottom: 10px;
+}
+
+label.standard-label_one {
+  padding-right: 38px;
+}
+
+label.standard-label_two {
+  padding-right: 10px;
+}
+
+label.standard-label_three {
+  padding-right: 20px;
+}
+
+textarea {
+  width: 180px;
+}
+
+.container_contact {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  border: dotted var(--dark-violet);
+  background-color: var(--opaque-color);
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.container_contact div {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  flex-basis: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  background-color: lightgrey;
+}
+
+.contact_details {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_contact div:second_child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
 }
 
 .button button {

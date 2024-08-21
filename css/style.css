@@ -123,6 +123,11 @@ a :link {
   flex-wrap: wrap;
 }
 
+main {
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
@@ -330,5 +335,107 @@ link,
 
   .page-footer {
     min-width: 250px;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div_mail {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  form.form_layout {
+    display: table;
+    padding: 20px;
+    border-color: var(--dark-violet);
+    background-color: var(--opaque-color);
+    border-style: dotted;
+  }
+
+  div.div_layout {
+    display: table;
+    margin: 2px;
+  }
+
+  label,
+  input {
+    display: table-cell;
+    margin-bottom: 10px;
+  }
+
+  label.standard-label_one {
+    padding-right: 38px;
+  }
+
+  label.standard-label_two {
+    padding-right: 10px;
+  }
+
+  label.standard-label_three {
+    padding-right: 20px;
+  }
+
+  textarea {
+    width: 180px;
+  }
+
+  .container_contact {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    border: dotted var(--dark-violet);
+    background-color: var(--opaque-color);
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .container_contact div {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    flex-basis: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+
+  div.contact_details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container_contact div:second_child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+  }
+  button,
+  .button_form {
+    border: none;
+    font-family: inherit;
+    font-size: var(--mainfontsize);
+    text-align: center;
+    background-color: var(--tertiary-color);
+    color: var(--buttonpink);
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    border-radius: var(--standardbradius);
+    transition: var(--standardtransition);
   }
 }
