@@ -332,11 +332,20 @@ link,
   border: none;
   display: inline-block;
   color: var(--hyperlink-color);
+  background-color: #04aa6d;
   text-decoration: none;
-  padding: 10px;
+  padding: 15px 32px;
   border-radius: 3px;
   transition-duration: 0.2s;
   transition-property: opacity;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.34);
+  -webkit-transition: 0.8s ease-out;
+  -o-transition: 0.8s ease-out;
+  transition: 0.8s ease-out;
+  text-align: center;
+  line-height: normal;
 }
 
 @keyframes color-change {

@@ -11,9 +11,11 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=SUSE:wght@100..800&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
     />
     <link rel="stylesheet" href="./css/style.production.css" />
   </head>
@@ -24,7 +26,6 @@
         src="img/logo.png"
         class="logo page-header__item"
         alt="logo"
-        width="150"
         aria-hidden="true"
       />
       <nav class="main-navigation page-header__item">
@@ -41,6 +42,11 @@
               class="navigation-list_item navigation-list_item--active"
               >About</a
             >
+            <li role="presentation">
+              <a href="skills.html" role="menuitem" class="navigation-list_item"
+                >Skills</a
+              >
+            </li>
           </li>
           <li role="presentation">
             <a href="work.html" role="menuitem" class="navigation-list_item"
@@ -56,21 +62,33 @@
       </nav>
     </header>
     <!-- Here is the about section of the website -->
-    <section class="about-me">
-      <h1>About Me</h1>
-      <p>
-        My name is Pooja and I am a Full Stack Web Developer. I have enrolled in
-        a Career Foundary course and have been working on my coding skills
-        through numberous projects. I am in the middle of transitioning my
-        career, whereas my previous experience entails mostly in Technical
-        Writing. Now I am looking forward to contribute my knowledge as a web
-        developer to an innovative team. I am open for full-time work in the
-        industry.
+    <section>
+      <h1 class = "heading">About Me</h1>
+      <p class="text-container">
+        As a former technical writer to aspiring web developer with a passion for creating interactive and<br/>
+dynamic websites. <br/><br/>I recently began my journey into web development and have quickly immersed<br/>
+myself in learning front-end and back-end technologies. With a foundation in HTML, CSS, and<br/>
+JavaScript.<br/><br/>I have also experience in frameworks like React, Redux, Angular and Node.js.<br/>
+I have keen interest in learning and constantly developing new web languages. My clean code<br/>
+practices and attention to details ensure a seamless connection between the frontend, MongoDB<br/>
+database and backend.<br/><br/> I have created a o highlight some of my projects that I have been<br/>
+working on.<br/><br/> Here is my portfolio link:
+<a
+href="https://github.com/PoojaChinu/Portfolio_Website"
+target="_blank"
+class="link"
+>
+Github</a
+            >
+
       </p>
-      <a href="./files/Pooja Porwal.pdf" class="button" download
+      <div>
+        <img src="img/aboutme.jpg" alt="Me on a large waterfall" class="img-container">
+      </div>
+      <!-- <a href="./files/Pooja Porwal.pdf" class="button" download
         >Download my CV</a
-      >
-      <svg
+      > -->
+      <!-- <svg
         id="about-picture"
         xmlns="http://www.w3.org/2000/svg"
         class="berlin-illustration"
@@ -2136,9 +2154,9 @@
             d="M55.253 470.489L55.253 410.403C55.253 409.85 54.805 409.403 54.253 409.403 53.701 409.403 53.253 409.85 53.253 410.403L53.253 470.489C53.253 471.041 53.701 471.489 54.253 471.489 54.805 471.489 55.253 471.041 55.253 470.489M50.889 340.95L65.312 340.95C65.865 340.95 66.312 340.502 66.312 339.95 66.312 339.397 65.865 338.95 65.312 338.95L50.889 338.95C50.336 338.95 49.889 339.397 49.889 339.95 49.889 340.502 50.336 340.95 50.889 340.95"
           ></path>
         </g>
-      </svg>
+      </svg> -->
       <!-- Here is the table of the website -->
-      <table>
+      <!-- <table>
         <thead>
           <tr>
             <th>Skills</th>
@@ -2188,7 +2206,7 @@
             <td>Beginner</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
     </section>
     <!-- Here is the footer of the website -->
     <footer class="page-footer">

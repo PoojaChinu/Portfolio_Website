@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="sytlesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.production.css" />
+  </head>
+  <body>
+    <!-- Here is the header of the website -->
+    <header class="page-header">
+      <img
+        src="img/logo.png"
+        class="logo page-header__item"
+        alt="logo"
+        width="150"
+        aria-hidden="true"
+      />
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list_item navigation-list_item--active"
+              >Home</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list_item"
+              >About</a
+            >
+            <li role="presentation">
+              <a href="skills.html" role="menuitem" class="navigation-list_item"
+                >Skills</a
+              >
+            </li>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list_item"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list_item"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="skill-section">
+      <h1 class="skills">Skills</h1>
+      <p class="p-skills">
+        I can build web sites and apps from concept,layout and interactive
+        elements to backend/server-side and database
+      </p>
+      <div class="column" id="skillset">
+        <div class="column-one" id="frontend">
+          <h3>Frontend</h3>
+          <div>HTML,CSS,JS</div>
+          <div>Responsive Design</div>
+          <div>React</div>
+          <div>Redux</div>
+          <div>Angular</div>
+          <div>Mobile Apps(React Native, Expo, PWA)</div>
+          <div>Test and Behaviour-Driven-Development</div>
+          <div>Continous Integration / Delivery</div>
+        </div>
+        <div class="column-two" id="backend">
+          <h3>Backend & Database</h3>
+          <div>NodeJS and ExpressJS</div>
+          <div>Creation and Integration of ApIs</div>
+          <div>MongoDB</div>
+          <div>Heroku</div>
+          <div>AWS</div>
+          <div>Firebase</div>
+        </div>
+      </div>
+      <div id="tool-cards" class="cards">
+        <div class="tool-cards_column">
+          <h4>Languages</h4>
+          <div class="tools-cards_cards-container">
+            <span class="tech-card">HTML</span>
+            <span class="tech-card">CSS</span>
+            <span class="tech-card">JavaScript</span>
+            <span class="tech-card">TypeScript</span>
+          </div>
+        </div>
+        <div class="tool-cards_column">
+          <h4>Frontend Libraries & frameworks</h4>
+          <div class="tools-cards_cards-container">
+            <span class="tech-card">jQuery</span>
+            <span class="tech-card">Bootstrap</span>
+            <span class="tech-card">React</span>
+            <span class="tech-card">React-Redux</span>
+            <span class="tech-card">Angular</span>
+            <span class="tech-card">Angular-Material</span>
+          </div>
+        </div>
+        <div class="tool-cards_column">
+          <h4>Backend and other libraries</h4>
+          <div class="tools-cards_cards-container">
+            <span class="tech-card">NodeJS</span>
+            <span class="tech-card">Express</span>
+            <span class="tech-card">Morgan</span>
+            <span class="tech-card">CORS</span>
+          </div>
+        </div>
+        <div class="tool-cards_column">
+          <h4>Testing & QA</h4>
+          <div class="tools-cards_cards-container">
+            <span class="tech-card">Postman</span>
+            <span class="tech-card">Jest</span>
+            <span class="tech-card">Enzyme</span>
+            <span class="tech-card">Cucumber</span>
+            <span class="tech-card">Puppeteer</span>
+          </div>
+        </div>
+        <div class="tool-cards_column">
+          <h4>Documentation</h4>
+          <div class="tools-cards_cards-container">
+            <span class="tech-card">JSDoc</span>
+            <span class="tech-card">TypeDoc</span>
+          </div>
+        </div>
+        <div class="tool-cards_column">
+          <h4>Web Services & database</h4>
+          <div class="tools-cards_cards-container">
+            <span class="tech-card">GitHub</span>
+            <span class="tech-card">AWS</span>
+            <span class="tech-card">MongoDB</span>
+            <span class="tech-card">PostgreSQL</span>
+            <span class="tech-card">Google Firestore</span>
+            <span class="tech-card">Heroku</span>
+            <span class="tech-card">Netlify</span>
+          </div>
+        </div>
+        <div class="tool-cards_column">
+          <h4>Mobile Apps</h4>
+          <div class="tools-cards_cards-container">
+            <span class="tech-card">PWA</span>
+            <span class="tech-card">React Native</span>
+            <span class="tech-card">Android Studio</span>
+            <span class="tech-card">Expo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Here is the footer of the website -->
+    <footer class="page-footer">
+      <p class="footer-text">Find me on</p>
+      <div>
+        <a
+          href="https://github.com/PoojaChinu/Portfolio_Website"
+          target="_blank"
+        >
+          <img src="./img/github.png" alt="Github" width="30px" height="30px" />
+        </a>
+        <a href="https://www.linkedin.com/in/porwalpooja/" target="_blank">
+          <img
+            src="./img/lnkdIn.png"
+            alt="LinkedIn"
+            width="30px"
+            height="30px"
+          />
+        </a>
+        <a href="https://medium.com/" target="_blank">
+          <img src="./img/medium.png" alt="Medium" width="30px" height="30px" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
