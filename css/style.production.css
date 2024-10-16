@@ -405,6 +405,23 @@ tr:hover {
   width: 300px;
 }
 
+.work-link {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  background-color: white;
+  text-decoration: none;
+  color: #009688;
+  padding: 15px 32px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: normal;
+  width: 300px;
+}
+
 .contact {
   text-align: left;
 }
@@ -457,6 +474,25 @@ form button {
 
 .skill-section {
   padding: 0px 10px 10px 30px;
+}
+
+.section {
+  width: 100%;
+  text-align: center;
+}
+
+.case-study .nowrap {
+  white-space: nowrap;
+}
+
+.floating-img_container .txt-container {
+  max-width: 500px;
+  max-width: 100%;
+}
+
+.case-study {
+  padding: 15px;
+  text-align: center;
 }
 
 .skills {
@@ -522,14 +558,30 @@ form button {
   text-align: center;
 }
 
+.tech-cards-container {
+  justify-content: center;
+}
+
 .tech-card {
   background-color: grey;
   color: orange;
   border-radius: 5px;
   padding: 2px 5px;
-  white-space: nowrap;
+  white-space: normal;
   text-align: center;
-  margin: 2px 2px 20px 2px;
+  margin: 2px;
+}
+
+.screenshot-container_3pics {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.screenshot {
+  max-width: 30%;
+  margin: 0;
+  border: 3px solid white;
+  border-radius: 3px;
 }
 
 @-webkit-keyframes color-change {
@@ -662,11 +714,16 @@ form button {
   .grid__item img.work-images {
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
   }
 
   .button button__secondary {
     width: 100%;
     margin: 5px auto;
+    background-color: #f76414;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
   }
 
   .project-link {
