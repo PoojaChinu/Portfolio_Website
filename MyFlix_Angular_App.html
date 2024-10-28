@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Design</title>
+    <link rel="shortcut icon" href="./img/file_type_favicon_icon_130608.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="sytlesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.production.css" />
+  </head>
+
+  <body>
+    <script type="module" src="./js/page-header.js"></script>
+    <page-header></page-header>
+
+    <main class="case-study">
+      <h1>Case Study for MyFlix Angular App project</h1>
+
+      <img
+        class="hero-img"
+        src="img/screenshots/Screenshot-movie-flix-angular.png"
+        style
+        width="80%"
+        ;
+        alt="Screenshot of the MoveX Angular client."
+      />
+
+      <div class="section">
+        <h2>Overview</h2>
+        <p>
+          myFlix Angular is a web app, developed using MERN Stack which allows user to
+          access information about movies, genre and directors. Users are also
+          able to create an account, update their personal data, create a list
+          of favourite movies.
+        </p>
+        <p>
+          It consists of a backend and two frontend clients. The backend is
+          where the movies are stored in a database, as well as the API that
+          allows apps to interact with the database. The frontend clients, one
+          created with React which provide the interface that allows user to
+          browse the movies, view details about each movie, style or source,
+          manage their user profile and create a list of their favorite movies.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Purpose & Objective</h2>
+        <p>
+          I built this personal project in the context of a CareerFoundry course
+          to master full-stack web development.
+        </p>
+        <p>
+          The goal was to create a fully functional, responsive and engaging web
+          app to provide movers with inspiration and details about a variety of
+          movements.
+        </p>
+        <p>
+          The challenge was to build an API from scratch, set up and connect a
+          database, as well as make use of the most popular frontend JavaScript
+          libraries/frameworks – React – to create engaging interactive user
+          interfaces.
+        </p>
+        <p>
+          At the same time the project was set up to produce a great portfolio
+          project and get used to common project requirements like user stories
+          and user flows.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Tech Stack / Tools</h2>
+        <p><b>MERN and MEAN stack</b></p>
+        <table>
+          <tbody>
+            <tr>
+              <td class="nowrap"><b>Backend</b></td>
+              <td>
+                VS Code, NodeJS (Express, Morgan, bodyParser, mongoose, CORS,
+                Passport, bcrypt), MongoDB, Postman, Heroku, JSDoc
+              </td>
+              <!-- <td class="nowrap">
+                <a
+                  href="https://github.com/PoojaChinu/my-flix-application"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button"
+                  >GitHub</a
+                >
+              </td> -->
+            </tr>
+            <tr>
+              <td class="nowrap"><b>Angular client</b></td>
+              <td>
+                VS Code, JavaScript, Angular, Material, Parcel, PropTypes, Axios, Netlify
+              </td>
+              <!-- <td class="nowrap">
+                <a
+                  href="https://pooja-porwal-myflix.netlify.app/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button"
+                  >Live demo</a
+                >
+                <a
+                  href="https://github.com/PoojaChinu/myFlix-client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="button"
+                  >GitHub</a
+                >
+              </td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section">
+        <h2>Duration</h2>
+        <p>
+          All in all it took approximately 3 month. For sure a lot more than a
+          project like this should take in “real life”. But since it was a study
+          projects, there were so many things to learn and figure out. I got
+          really absorbed in it an at the end felt ready to call myself a web
+          developer.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Credits</h2>
+        <p>
+          Big thanks goes to my tutor Ahmed Mahfoudh. Without him this would
+          have been way less instructive and fun. And of course I also thank my
+          mentor Stephen Barungi. Thanks also to Marion Sénéchal for great
+          feedback on this case study.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Approach</h2>
+        <h3>Backend</h3>
+        <div class="floating-img_container">
+          <div class="img-container">
+            <img
+              src="img/screenshots/Screenshot-backend.png"
+              style
+              width="70%"
+              alt="Screenshot of the code for a MyFlix API endpoint."
+            />
+          </div>
+          <div class="txt-container">
+            <p>
+              For the server side I created a RESTful API using Node.js and
+              Express as well as a non-relational database (MongoDB). The API
+              allows to retrieve data about the moves and users from the
+              database through common HTTP requests and returns JSON. API and
+              database are connected by the business logic layer, using
+              Mongoose.
+            </p>
+          </div>
+        </div>
+        <div class="floating-img_container rev">
+          <div class="txt-container">
+            <p>
+              <b>Authentication</b><br />
+              I also implemented a login endpoint with basic HTTP authentication
+              returning a authorization JWT (token) to the client. This is
+              necessary to ensure only logged in users can access the database.
+              Initially the mechanisms of authentication and authorization were
+              quite challenging for me. But after some time and effort it became
+              clear and functional.<br />
+              To test the endpoints I used Postman.
+            </p>
+          </div>
+        </div>
+
+        <h3>Angular client</h3>
+        <div class="floating-img_container">
+          <div class="img-container">
+            <img
+              src="img/screenshots/Screenshot-movie-flix-angular.png"
+              style
+              width="70%"
+              alt="Screenshot of the MoveX React client."
+            />
+          </div>
+          <div class="txt-container">
+            <p>
+              Once the backend was set up, I created a frontend (the user
+              interface) using Angular library. It is a single-page, responsive
+              web application (SPA), built following the MVC design pattern.
+              There are multiple views: Registration, login, main view (where
+              all the moves are shown as cards), move view (where details about
+              a specific move are elaborated), style view and source view
+              (details about the style/source, as well as all the matching moves
+              in the database) and a profile view (here the user can edit their
+              user data and view cards for their favorite moves).
+            </p>
+          </div>
+        </div>
+        <!-- <p>
+          <b>Starting with React</b><br />
+          This was the biggest and most challenging, but also very exciting part
+          for me as there was a lot to learn starting off with React. Compared
+          to pure/classical HTML, CSS and JavaScript, it is a very different
+          approach to interface creation and design. There were many topics I
+          had to research, experiment with and figure out.
+        </p> -->
+      <div class="section">
+        <!-- <h2>Conclusion</h2> -->
+        <br/>
+        <p>
+         MyFlix Angular was my second full-stack web application. Traversing from the
+          rather abstract server code and database structures all the way to two
+          great user interfaces was an amazing achievement.
+        </p>
+        <p>
+          The whole server side, with it’s security mechanisms and logic layers
+          was quite challenging at first. But after a lot of research and some
+          help from my tutor it all made sense.
+
+          <br/> <br/>
+          
+          I am quite proud of the product I produced. I would like to continue working
+          on this project for some more time to improve the product.
+      <hr />
+    </main>
+
+    <script type="module" src="./js/page-footer.js"></script>
+    <page-footer></page-footer>
+
+    <!-- <script src="js/tota11y.min.js"></script> -->
+    <!-- <script src="js/animations.js"></script> -->
+  </body>
+</html>

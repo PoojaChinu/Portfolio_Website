@@ -65,7 +65,7 @@ button {
   color: #357b70;
   text-decoration: none;
   padding: 20px;
-  border-radius: 3px;
+  border-radius: 10px;
   border-bottom: 2px solid #358b18;
 }
 
@@ -161,23 +161,18 @@ a :link {
 }
 
 .main-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 4px 2px;
-  padding: 1em;
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  background-color: #009688;
+  height: 50px;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  margin: 30px;
 }
 
 .page-header__item {
@@ -199,15 +194,19 @@ a :link {
   padding: 0;
   margin: auto;
 }
+
 .navigation-list_item {
   margin: 2px;
   padding: 2px;
   margin: 4px 2px;
   padding: 0.7em;
+  color: white;
+  text-decoration: none;
 }
-/* .navigation-list_item--active {
-  background-color: lightblue;
-} */
+
+.navigation-list_item--active {
+  color: purple;
+}
 
 .container {
   display: flex;
@@ -218,7 +217,7 @@ a :link {
 
 .contact_form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -340,7 +339,7 @@ textarea {
   color: white;
   text-decoration: none;
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
   /* width of the border, type, color */
   border-bottom: undefined;
   -webkit-transition-duration: 0.2s;
@@ -396,7 +395,7 @@ tr:hover {
   text-decoration: none;
   background-color: #009688;
   padding: 15px 32px;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-bottom: 10px;
   margin: 4px 2px;
   margin-top: 10px;
@@ -413,7 +412,7 @@ tr:hover {
   text-decoration: none;
   color: #009688;
   padding: 15px 32px;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-bottom: 10px;
   margin: 4px 2px;
   margin-top: 10px;
@@ -435,7 +434,7 @@ tr:hover {
 form {
   padding: 1em;
   background: #009688;
-  border-radius: 6px;
+  border-radius: 10px;
   border: 1px solid #c1c1c1;
   max-width: 2000px;
   line-height: 1.5;
@@ -445,7 +444,7 @@ form {
 form input {
   background: #fff;
   border: 1px solid #9c9c9c;
-  border-radius: 3px;
+  border-radius: 10px;
   width: 90%;
   padding: 0.7em;
   float: right;
@@ -454,7 +453,7 @@ form input {
 form textarea {
   background: #fff;
   border: 1px solid #9c9c9c;
-  border-radius: 3px;
+  border-radius: 10px;
   width: 90%;
   padding: 0.7em;
   float: right;
@@ -493,11 +492,6 @@ form button {
 .case-study {
   padding: 15px;
   text-align: center;
-}
-
-.skills {
-  font-size: larger;
-  text-align: left;
 }
 
 .column {
@@ -706,7 +700,9 @@ form button {
     justify-content: space-between;
     align-items: center;
     min-height: 300px;
+    border-radius: 10px;
   }
+
   .work-title {
     padding: 0 20px;
   }
@@ -769,10 +765,7 @@ form button {
   }
 
   .navigation-list_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    margin: auto 2px;
   }
 
   .profile {
